@@ -1,0 +1,39 @@
+{
+    "folders": [
+      {
+        "path": "."
+      }
+    ],
+    "settings": {
+      "files.exclude": {
+        "node_modules/": true,
+        "build": true,
+        ".vscode": true,
+        "public": true,
+        "tsconfig.json": false,
+        ".eslintcache": true,
+        "*.log": true
+      },
+      // Forces the tab to be space.
+      "editor.insertSpaces": true,
+      // The number of spaces a tab is equal to. This setting is overridden
+      // based on the file contents when `editor.detectIndentation` is true.
+      // "editor.tabSize": 3,
+      "editor.detectIndentation": false,
+      "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+      "editor.find.cursorMoveOnType": false
+    },
+  
+    "launch": {
+      "version": "1.0.0",
+      "configurations": [
+        {
+          "type": "chrome",
+          "request": "launch",
+          "name": "Launch FNC debug",
+          "url": "http://localhost:8080",
+          "webRoot": "${workspaceFolder}"
+        }
+      ]
+    }
+  }

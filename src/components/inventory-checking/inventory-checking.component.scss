@@ -1,0 +1,211 @@
+.inventory-checking-modal {
+  .ant-modal-content {
+    border-radius: 30px;
+    height: 940px;
+    .ant-modal-body {
+      padding: 40px 29px 32px 32px;
+      .title-text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        color: #50429b;
+      }
+
+      .select-material-box {
+        margin: 28px 33px 0px 33px;
+      }
+
+      .btn-cancel {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0.3px;
+        color: #a5abde;
+        border: 1px solid #a5abde;
+        min-width: 99px !important;
+        height: 60px;
+        border-radius: 16px;
+      }
+
+      .btn-confirm {
+        min-width: 95px !important;
+        height: 60px;
+        border-radius: 16px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        color: #ffffff;
+        background: #ff8c21;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+.selected-material-table table tbody tr:nth-of-type(odd) {
+  background: #fff !important;
+}
+.selected-material-table table thead tr th {
+  padding: 16px 10px !important;
+}
+
+.selected-material-table .ant-table-cell {
+  font-size: 15px;
+}
+
+.selected-material-table {
+  .ant-table-body {
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+  }
+
+  .ant-table-body::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .ant-table-body::-webkit-scrollbar-track {
+    border-radius: 2px;
+  }
+
+  .ant-table-body::-webkit-scrollbar-thumb {
+    background: #50429b;
+    border-radius: 2px;
+  }
+
+  .ant-table-body::-webkit-scrollbar-thumb:hover {
+    background: #817cba;
+  }
+}
+
+.material-table-box {
+  margin-top: 46px;
+}
+
+.grid-text-column {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.grid-name-column {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+
+  .text-overflow {
+    width: 205px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 18px;
+  }
+
+  .text-name {
+    color: #000000 !important;
+  }
+
+  .paragraph-style {
+    max-width: inherit;
+  }
+}
+
+.btn-inventory-checking-group {
+  position: absolute;
+  bottom: 32px;
+  right: 464px;
+}
+
+.btn-end-shift {
+  position: absolute;
+  bottom: 32px;
+  right: 542px;
+}
+
+/*Adapt Screen Resolution 4:3*/
+@media screen and (max-width: 1024px) {
+  .inventory-checking-modal {
+    width: 926px !important;
+    .ant-modal-content {
+      height: 709px;
+      .ant-modal-body {
+        padding: 17px 13px 15px 13px;
+        .title-text {
+          font-size: 32px;
+          line-height: 37px;
+        }
+        .select-material-box {
+          margin: 21px 0px 12px 0px;
+        }
+        .btn-cancel {
+          min-width: 99px !important;
+          height: 48px;
+        }
+
+        .btn-confirm {
+          min-width: 101px !important;
+          height: 48px;
+        }
+      }
+    }
+    .ant-table-body {
+      max-height: 440px !important;
+    }
+  }
+  .material-table-box {
+    margin-top: 0px;
+  }
+  .selected-material-table .ant-table-cell {
+    font-size: 14px !important;
+    table {
+      .ant-table-thead > tr > th {
+      }
+    }
+  }
+  .selected-material-table table thead tr th {
+    height: 48px !important;
+    padding: 4px !important;
+  }
+  .btn-inventory-checking-group {
+    bottom: 6px;
+    right: 338px;
+  }
+  .selected-material-table table .ant-table-tbody tr td {
+    padding: 4px !important;
+  }
+  .selected-material-table .fnb-input-number .ant-input-number-input {
+    padding: 0 8px;
+    font-size: 14px;
+  }
+  .selected-material-table .fnb-input {
+    height: 48px;
+    font-size: 14px;
+    padding: 0 8px;
+  }
+  .selected-material-table .fnb-input:placeholder-shown {
+    font-size: 14px;
+    padding: 0 8px;
+  }
+  .selected-material-table .fnb-table .ant-table-tbody > tr > td {
+    height: 74px;
+  }
+  .selected-material-table table tbody tr:nth-of-type(odd) {
+    background: #fff !important;
+  }
+  .selected-material-table .fnb-table .ant-table-tbody table {
+    width: 880px !important;
+  }
+  .selected-material-table {
+    .ant-table-body {
+      overflow-y: auto !important;
+    }
+  }
+  .selected-material-table .ant-table .ant-table-expanded-row-fixed {
+    margin: 0;
+    padding: 0;
+  }
+}

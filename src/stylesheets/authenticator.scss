@@ -1,0 +1,882 @@
+@mixin media-breakpoint($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin scrollbar($selectors) {
+  .#{($selectors)} {
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 2px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #50429b;
+      border-radius: 2px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: #817cba;
+    }
+  }
+}
+
+@mixin logo-image() {
+  position: relative;
+  $_height: 240px;
+  $_logo_height: 175px * 0.7;
+  $_logo_width: 250px * 0.7;
+  &::before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url(../assets/go-fnb-login-banner.png);
+    width: 100%;
+    height: $_height;
+    border-radius: 20px 20px 0 0;
+    background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../assets/go-fnb-mobile-logo.png);
+    top: calc((($_height / 2) - ($_logo_height / 2)) * 1.3);
+    left: 50%;
+    transform: translateX(-50%);
+    width: $_logo_width;
+    height: $_logo_height;
+  }
+}
+
+.c-authenticator {
+  position: relative;
+  background-image: url(../assets/login-pos-bg.jpg);
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: scroll;
+
+  @include media-breakpoint(1000px) {
+    .form-logo {
+      display: none !important;
+    }
+  }
+
+  .select-language-dropdown {
+    background: #ffffff !important;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 12px !important;
+
+    div {
+      min-width: 200px !important;
+      overflow-x: hidden;
+    }
+
+    .ant-select-item-option {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+      color: #5a5a5a;
+      padding-left: 10px;
+    }
+
+    .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+      color: #817cba;
+      font-weight: 600;
+      background-color: #ffffff;
+    }
+
+    .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+      background: #f9fbff;
+      border-radius: 6px;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding-left: 5px;
+    }
+  }
+
+  .flag {
+    vertical-align: middle;
+  }
+
+  .content-bottom {
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-between;
+
+    .icon-content-bottom {
+      margin-left: 24px;
+    }
+
+    .ant-space-item {
+      text-align: center;
+    }
+  }
+
+  .login-contain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &__right {
+      display: flex;
+      justify-content: end;
+      top: 50%;
+      right: 0;
+      transform: translate(0, -50%);
+      margin-right: 50px;
+
+      @include media-breakpoint(1000px) {
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        .frm-content {
+          width: 100%;
+        }
+        .login-inner {
+          &__spacing {
+            padding-top: 0 !important;
+            @include logo-image;
+          }
+        }
+      }
+    }
+
+    .list-item {
+      .item-option {
+        width: 100%;
+      }
+
+      .item-option:hover {
+        border: 0.02px #e7e5f7 solid;
+        background-color: #e7e5f7;
+      }
+
+      .item-image-logo {
+        border-radius: 12px;
+      }
+    }
+
+    .login-inner {
+      width: 528px;
+      border-radius: 20px;
+      background-color: white;
+      box-shadow: 0px 0px 40px rgba(32, 56, 85, 0.2);
+
+      &__header {
+        @include logo-image;
+      }
+
+      &__spacing {
+        padding-top: 20px;
+      }
+
+      .frm-content {
+        padding: 0 32px;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 32px;
+        }
+      }
+
+      .label-login {
+        height: 40px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0.3px;
+        color: #323e40;
+        margin-bottom: 10px;
+      }
+
+      .label-input {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        color: #121212;
+        opacity: 0.5;
+        padding-bottom: 14px;
+        padding-top: 14px;
+      }
+    }
+
+    .error-field {
+      height: auto;
+      width: 464px;
+      background: #fff6ee;
+      border: 1px solid #e47712;
+      border-radius: 8px;
+
+      p {
+        font-family: "Nunito";
+        margin-bottom: 0;
+        padding: 12px 24px;
+        min-height: 25px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.3px;
+        color: #e47712;
+      }
+    }
+
+    .form-lang {
+      justify-content: end;
+
+      .ant-select {
+        min-width: 140px;
+
+        .ant-select-selector:hover {
+          box-shadow: none !important;
+          border: none !important;
+        }
+
+        .ant-select-selector {
+          border: none;
+
+          .ant-select-selection-item {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            letter-spacing: 0.3px;
+            color: #2b2162;
+            min-width: 132px;
+            padding-left: 16px;
+            min-height: 0 !important;
+          }
+        }
+
+        .ant-select-arrow {
+          -webkit-user-select: none;
+          user-select: all;
+        }
+      }
+
+      .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        border: none;
+        box-shadow: none;
+        outline: 0;
+      }
+    }
+
+    .ant-input-affix-wrapper {
+      border-radius: 16px;
+      background: #ffffff;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+      height: 60px;
+      border: none;
+    }
+
+    .ant-input-affix-wrapper:hover {
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+      border: none;
+    }
+
+    .ant-input-affix-wrapper:focus,
+    .ant-input-affix-wrapper-focused {
+      box-shadow: 0px 1px 4px #fc9434;
+      border: none;
+    }
+
+    .ant-input-affix-wrapper-status-error,
+    .ant-input-affix-wrapper-status-error:hover {
+      border: 1px solid #ff0000;
+    }
+
+    .ant-input {
+      font-size: 18px;
+    }
+
+    .ant-input-prefix {
+      color: #9f9f9f;
+      font-size: 18px;
+      padding: 5px;
+    }
+
+    .ant-input-suffix {
+      color: #9f9f9f;
+      font-size: 18px;
+      padding: 5px;
+    }
+
+    .ant-input:placeholder-shown {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.3px;
+      color: #9f9f9f;
+    }
+
+    .ant-form-item-explain {
+      margin-top: 5px;
+
+      .ant-form-item-explain-error {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+        color: #ff0000;
+        padding-top: 8px;
+        position: absolute !important;
+      }
+    }
+
+    .ant-btn {
+      border-radius: 12px;
+      background: #50429b;
+      letter-spacing: 0.3px;
+      height: 68px;
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 500;
+      font-style: normal;
+    }
+  }
+
+  .forgot-password {
+    justify-content: right;
+    padding-bottom: 16px;
+  }
+
+  .login-form-forgot {
+    float: right;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: right;
+    letter-spacing: 0.3px;
+    color: #5a5a5a;
+    margin-top: 16px;
+    text-align: right;
+  }
+
+  .login-form-button {
+    width: 100%;
+    border-radius: 12px;
+    height: 40px;
+  }
+
+  .text-register {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #5a5a5a;
+    text-align: center;
+  }
+
+  .link-register {
+    color: #50429b;
+    font-weight: 700;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: all 5000s ease-in-out 0s;
+    transition-property: background-color, color;
+  }
+
+  /*Change text in autofill textbox*/
+  input:-webkit-autofill {
+    -webkit-text-fill-color: #121212 !important;
+  }
+
+  .ant-form-item-explain-error {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+    color: #ff0000;
+    padding-top: 8px;
+    position: absolute !important;
+  }
+
+  .form-logo {
+    flex: 1;
+    display: flex;
+    margin-left: 167px;
+    margin-top: 19vh;
+
+    .text-logo {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 101px;
+      letter-spacing: 0.3px;
+      color: #ffffff;
+    }
+  }
+
+  .form-register {
+    background-color: white;
+    border-radius: 30px;
+
+    &__spacing {
+      padding: 48px 40px 20px 40px;
+    }
+
+    .step {
+      padding-bottom: 20px;
+
+      .step-box {
+        width: 100%;
+      }
+    }
+
+    .form-container {
+      .label-register {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 21px;
+        letter-spacing: 0.3px;
+        color: #121212;
+        opacity: 0.5;
+      }
+
+      .form-input {
+        margin-top: 14px;
+        border-radius: 10px !important;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15) !important;
+        background-color: #ffffff !important;
+        border-color: #ffffff !important;
+      }
+
+      .form-input:focus,
+      .form-input:focus-within {
+        box-shadow: 0px 0px 3px #50429b !important;
+        border-color: #ffffff !important;
+      }
+
+      .form-select-two-row {
+        width: 213px;
+      }
+
+      .form-select-three-row {
+        width: 128px;
+      }
+
+      .form-select {
+        width: 464px;
+      }
+
+      .header {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0.3px;
+        color: #323e40;
+      }
+
+      .header-otp {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 45px;
+        letter-spacing: 0.3px;
+        color: #323e40;
+        margin-top: 89px;
+      }
+
+      .send-code-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.3px;
+        text-align: center;
+        color: #2b2162;
+
+        b {
+          font-weight: 700;
+        }
+      }
+
+      .resend-code-text {
+        margin: 40px 137px 0px 152px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0.3px;
+        text-align: center;
+        color: #9f9f9f;
+
+        b {
+          font-size: 20px;
+          color: #50429b;
+          line-height: 30px;
+          font-weight: 700;
+        }
+      }
+
+      .otp-box-container {
+        .input-otp {
+          width: 64px;
+          height: 64px;
+          background-color: #ffffff !important;
+          border: 1px solid #ffffff;
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+          border-radius: 10px;
+          padding: 24px;
+
+          .ant-input {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.3px;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+
+  .text-bottom {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    margin-top: 20px;
+    color: #50429b;
+
+    .text-link {
+      color: #50429b;
+    }
+  }
+
+  .awesome-text {
+    margin-top: 51px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #50429b;
+  }
+
+  .ready-text {
+    margin-top: 28px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #50429b;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .phone-code {
+    font-size: 18px !important;
+  }
+
+  .button-start {
+    width: 474px !important;
+    margin-top: 40px !important;
+  }
+
+  .button-next.ant-btn {
+    border-radius: 10px;
+    background: #50429b;
+    letter-spacing: 0.3px;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 500;
+    width: 220px;
+    font-style: normal;
+    height: 76px;
+  }
+
+  .button-next.ant-btn-primary:hover,
+  .button-next.ant-btn-primary:active,
+  .button-next.ant-btn-primary:focus {
+    color: #ffffff;
+    border: #50429b;
+    background: #50429b;
+  }
+
+  .mt-34 {
+    margin-top: 34px;
+  }
+
+  .mt-24 {
+    margin-top: 24px;
+  }
+
+  .mt-8 {
+    margin-top: 8px;
+  }
+
+  .mt-12 {
+    margin-top: 12px;
+  }
+
+  .mt-13 {
+    margin-top: 13px;
+  }
+
+  .mt-16 {
+    margin-top: 16px;
+  }
+
+  .ml-40 {
+    margin-left: 40px;
+  }
+
+  .ml-16 {
+    margin-left: 16px;
+  }
+
+  .ml-8 {
+    margin-left: 8px;
+  }
+
+  .ml-12 {
+    margin-left: 12px;
+  }
+
+  .ml-24 {
+    margin-left: 24px;
+  }
+
+  .mt-60 {
+    margin-top: 60px;
+  }
+
+  .icon-select-dropdown {
+    margin: 18px 5px;
+  }
+
+  .icon-select-dropdown-2 {
+    margin: 14px 2px;
+  }
+
+  .ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon .ant-steps-icon-dot {
+    background: #50429b;
+    width: 20px;
+    height: 20px;
+    top: -6px;
+    left: -5px !important;
+  }
+
+  .ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon .ant-steps-icon-dot {
+    background: #eeecf5;
+    width: 20px;
+    height: 20px;
+    top: -6px;
+    left: -5px !important;
+  }
+
+  .ant-steps-item-process .ant-steps-item-icon > .ant-steps-icon .ant-steps-icon-dot {
+    background: #50429b;
+    width: 20px;
+    height: 20px;
+    top: -6px;
+    left: -5px !important;
+  }
+
+  .ant-steps-dot .ant-steps-item-tail,
+  .ant-steps-dot.ant-steps-small .ant-steps-item-tail {
+    border-top: 1px dashed #eeecf5;
+  }
+
+  .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-tail::after {
+    background: #50429b;
+  }
+
+  @include media-breakpoint(896px) {
+    width: 100vw;
+    background-image: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    .login-contain {
+      position: relative;
+      width: 100vw;
+    }
+
+    .login-inner {
+      width: 100% !important;
+      height: 100vh !important;
+      border-radius: 0 !important;
+      margin: auto !important;
+      box-shadow: none !important;
+
+      &__header {
+        $_height: 300px;
+        $_logo_height: 150px;
+
+        &::before {
+          content: "";
+          display: block;
+          background-repeat: no-repeat;
+          background-image: url(../assets/go-fnb-login-banner.png);
+          width: 100vw !important;
+          height: $_height;
+          background-size: cover;
+          background-position-y: -20px;
+          border-radius: 0 !important;
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-image: url(../assets/go-fnb-login-logo_2.png);
+          top: calc($_height / 2 - ($_logo_height / 2));
+          left: 50%;
+          transform: translateX(-50%);
+          width: 250px;
+          height: $_logo_height;
+        }
+      }
+    }
+
+    .form-register {
+      background-color: white;
+      border-radius: 30px;
+      position: relative;
+
+      &__spacing {
+        padding: 20px 32px 10px 32px;
+      }
+    }
+
+    .button-next.ant-btn {
+      width: auto !important;
+      height: 48px !important;
+    }
+
+    .text-bottom {
+      margin-top: 0;
+    }
+
+    .step-box {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(calc(-50% - 10px));
+    }
+
+    .ant-steps-item-process .ant-steps-item-icon > .ant-steps-icon .ant-steps-icon-dot {
+      background: #50429b;
+      width: 20px;
+      height: 20px;
+      top: 0px;
+      left: 0px !important;
+    }
+  }
+
+  /*Select Store*/
+  .select-store-form {
+    width: 528px;
+    min-height: 666px;
+    // padding: 22px 32px 30px 32px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 40px rgba(32, 56, 85, 0.2);
+
+    a {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 19px;
+      color: #50429b;
+
+      span {
+        margin-right: 8px;
+      }
+    }
+
+    .label-store {
+      font-family: "Plus Jakarta Sans";
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: 0.3px;
+      text-transform: capitalize;
+      color: #323e40;
+      text-align: left;
+      margin-top: 26px;
+      margin-bottom: 24px;
+    }
+
+    @include scrollbar("store-form");
+
+    .store-form {
+      //   width: 464px;
+      height: 500px;
+      padding: 3px;
+      overflow-y: scroll;
+
+      .store-detail-form {
+        width: 100%;
+        height: 120px;
+        border-radius: 16px;
+        background-color: #ffffff;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .ant-space-item .ant-image {
+          margin: 8px 12px 8px 8px;
+        }
+
+        span {
+          font-family: "Plus Jakarta Sans";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .content-inner {
+    padding: 0 20px;
+  }
+}

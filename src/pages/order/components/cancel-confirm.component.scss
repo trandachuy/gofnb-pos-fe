@@ -1,0 +1,129 @@
+.cancel-confirm-modal {
+  button {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .ant-modal-content {
+    border-radius: 48px;
+  }
+
+  .ant-modal-header {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #ecf1f9;
+    height: 102px;
+    position: relative;
+  }
+
+  .ant-modal-title {
+    color: #50429b;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .ant-modal-body {
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 24px;
+
+    .cancel-reason-order {
+      text-align: left;
+      margin-right: 5px;
+      span {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 500;
+        line-height: 36px;
+        font-size: 24px;
+        color: #000000;
+      }
+      .ant-form-item {
+        margin-bottom: 0px;
+      }
+      .cancel-text {
+        text-align: center;
+      }
+      .reason-text {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        margin-top: 24px;
+        margin-bottom: 8px;
+        span {
+          color: #db1b1b;
+        }
+      }
+      .reason-text-area {
+        margin-bottom: 50px;
+      }
+      #text-area-scroll {
+        padding-right: 0px !important;
+      }
+    }
+
+    .cancel-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .cancel-order-btn {
+        background-color: #fc0d1b;
+        color: #fff;
+      }
+    }
+  }
+
+  .ant-modal-footer {
+    text-align: center;
+    border-top: none;
+    padding-bottom: 8%;
+  }
+
+  .ant-btn {
+    height: 55px;
+    min-width: 183px;
+    border-radius: 16px;
+  }
+
+  .ant-btn-default {
+    min-width: 180px;
+    border: 1px solid #a5abde;
+    color: #a5abde;
+  }
+
+  .ant-btn-default:hover {
+    border: 1px solid #a5abde;
+    color: #a5abde;
+  }
+
+  .ant-btn-dangerous {
+    background-color: #fc0d1b;
+    color: #ffffff;
+    border: none;
+  }
+
+  .ant-btn-dangerous:hover {
+    background-color: #d90b17;
+    color: #ffffff;
+    border: none;
+  }
+}
+
+.style-text-confirm-delete {
+  color: #fc0d1b;
+}

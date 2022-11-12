@@ -1,0 +1,35 @@
+.payment-success-modal {
+  .ant-modal-content {
+    border-radius: 30px;
+    height: 626px;
+    background-image: url(../../assets/start-shift-background.png);
+    background-position: center top 70px;
+    background-repeat: no-repeat;
+    .ant-modal-body {
+      padding: 0;
+      .great-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 70px;
+        text-align: center;
+        color: #50429b;
+        padding-top: 179px;
+      }
+
+      .success-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+        padding-top: 7px;
+      }
+
+      .btn-row {
+        margin-top: 82px;
+      }
+    }
+  }
+}

@@ -1,0 +1,380 @@
+.modal-payment-method {
+  .ant-modal-content {
+    height: 708px;
+    border-radius: 30px;
+    background: #f7f5ff;
+    --growth-from: 0.5;
+    --growth-to: 1;
+    animation: growth linear 0.5s;
+
+    .ant-modal-body {
+      padding: 47px 32px 29px 31px;
+      .title-text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+        color: #50429b;
+      }
+      .wrapper-content {
+        margin-top: 40px;
+        display: flex;
+        .payment-method-option-box {
+          width: 181px;
+          height: 539px;
+          background: #f0edfd;
+          border-radius: 30px;
+          .payment-method-button-container {
+            padding: 0px 30px;
+            .payment-method-button {
+              width: 120px;
+              height: 120px;
+              background: #f0edfd;
+              box-shadow: 8px 8px 16px #e2ddf8, -8px -8px 16px #f7f5ff;
+              border-radius: 24px;
+              border: none !important;
+              margin: 30px 0px;
+              .btn-text-row {
+                margin-top: 3px;
+                .btn-text {
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 18px;
+                  line-height: 21px;
+                  color: #50429b;
+                }
+              }
+            }
+
+            .payment-method-button-active {
+              background: #50429b;
+              box-shadow: inset 8px 8px 16px #302471, inset -8px -8px 16px #463796;
+              border: none !important;
+            }
+          }
+        }
+
+        .payment-method-content-box {
+          margin-left: 32px;
+          width: 100%;
+          ///Momo - vnpay
+          .payment-method-momo-box,
+          .payment-method-vnpay-box {
+            margin-left: 46px;
+            margin-right: 40px;
+            .order-box {
+              margin-top: 8px;
+              width: 674px;
+              height: 101px;
+              background: #f4f1ff;
+              // background: #ffffff;
+              border-radius: 30px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .order-code-box {
+                margin-left: 30px;
+                .order-no-text {
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 18px;
+                  line-height: 24px;
+                  letter-spacing: 0.3px;
+                  color: #50429b;
+                }
+                .order-code-text {
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 24px;
+                  line-height: 24px;
+                  letter-spacing: 0.3px;
+                  color: #463796;
+                  padding-top: 4px;
+                }
+              }
+              .order-amount-box {
+                margin-right: 36px;
+                .order-amount-text {
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 32px;
+                  line-height: 40px;
+                  color: #ff8c21;
+                }
+              }
+            }
+            .payment-method-btn-box {
+              margin-top: 53px;
+              .ml-41 {
+                margin-left: 41px;
+              }
+              .pay-btn {
+                width: 313px;
+                height: 184px;
+                background: #f7f5ff;
+                box-shadow: 8px 8px 16px #ebe8fe, -8px -8px 16px #ffffff;
+                border-radius: 24px;
+                border: none;
+                outline: none;
+                .pay-btn-text {
+                  margin-top: 10px;
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 20px;
+                  line-height: 23px;
+                  color: #000000;
+                }
+              }
+            }
+
+            .cancel-payment-btn-box {
+              margin-top: 103px;
+              .btn-cancel-payment {
+                font-size: 24px;
+                line-height: 30px;
+                letter-spacing: 0.3px;
+                font-weight: 500;
+                font-style: normal;
+                height: 82px;
+                border-radius: 24px;
+                color: #a5abde;
+                border: 1px solid#a5abde;
+                padding-left: 18px;
+                padding-right: 18px;
+                background: #f7f5ff;
+                width: 358px;
+              }
+            }
+          }
+
+          .payment-method-vnpay-box {
+          }
+        }
+      }
+    }
+
+    .ant-modal-close-x {
+      margin-top: 25px;
+      margin-right: 52px;
+    }
+  }
+}
+
+///Calculator keyboard
+.calculator-keyboard-container {
+  .checkout-order-input {
+    height: 88px !important;
+    width: 100% !important;
+    max-width: 424px !important;
+    font-weight: 500 !important;
+    font-size: 28px !important;
+    line-height: 21px !important;
+    letter-spacing: 0.3px !important;
+    color: #000000 !important;
+    background: #ffffff !important;
+    box-shadow: none !important;
+    border-radius: 24px !important;
+    text-align: right !important;
+    padding-right: 24px !important;
+  }
+
+  .keyboard-box {
+    margin-top: 21px;
+    .abacus-button {
+      width: 92px;
+      height: 80px;
+      background: #f7f5ff;
+      box-shadow: 8px 8px 16px #ebe8fe, -8px -8px 16px #ffffff;
+      border-radius: 24px;
+      margin: 0px 24px 24px 0px;
+      border: none;
+      outline: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 38px;
+      color: #50429b;
+    }
+
+    .backspace-button {
+      height: 288px !important;
+    }
+
+    .clear-button {
+      font-size: 20px !important;
+      line-height: 23px !important;
+    }
+  }
+
+  .order-code-box {
+    height: 88px;
+    width: 100%;
+    max-width: 392px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .text-left {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      margin-left: 19px;
+      letter-spacing: 0.3px;
+      color: #50429b;
+    }
+    .text-right {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      text-align: right;
+      letter-spacing: 0.3px;
+      color: #463796;
+      margin-right: 16px;
+    }
+  }
+
+  .order-description-box {
+    height: 423px;
+    width: 100%;
+    max-width: 312px;
+    border-radius: 30px;
+    background: #f0edfd;
+    margin-top: 25px;
+    .pay-box {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 60px;
+      .text-pay,
+      .text-amount {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        display: flex;
+        color: #424242;
+        margin-left: 19px;
+      }
+      .text-amount {
+        margin-right: 16px;
+      }
+    }
+
+    .receive-money-box {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 57px;
+      .text-receive {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: #424242;
+        margin-left: 19px;
+      }
+      .text-amount {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        color: #424242;
+        margin-right: 16px;
+      }
+    }
+
+    .separation-line {
+      padding-top: 34px;
+      border-bottom: 1px dashed #a5abde;
+      margin: 0px 22px;
+    }
+
+    .change-money-box {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 29px;
+      .text-change {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: #424242;
+        margin-left: 19px;
+      }
+      .text-amount {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        color: #424242;
+        margin-right: 16px;
+      }
+    }
+
+    .btn-pay-box {
+      display: flex;
+      justify-content: center;
+      padding-top: 64px;
+      .btn-pay {
+        width: 100%;
+        max-width: 357px;
+        margin-left: 19px;
+        margin-right: 16px;
+        height: 82px;
+        border: none;
+        outline: none;
+        background: #ff8c21;
+        border-radius: 24px;
+        display: flex;
+        align-items: center;
+        .icon-pay {
+          margin-left: auto;
+          padding-top: 8px;
+        }
+        .text-pay {
+          margin-right: auto;
+          padding-left: 25px;
+          font-weight: 700;
+          font-size: 24px !important;
+          line-height: 30px;
+          text-align: center;
+          letter-spacing: 0.3px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.justify-title {
+  margin-left: 438px;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.btn-active-background-momo {
+  background: #50429b !important;
+  box-shadow: inset 8px 8px 16px #302471, inset -8px -8px 16px #463796 !important;
+  border-radius: 24px !important;
+}
+
+.btn-active-background-vnpay {
+  background: #f7f5ff !important;
+  box-shadow: inset 8px 8px 16px #ebe8fe, inset -8px -8px 16px #ffffff !important;
+  border-radius: 24px !important;
+}
+
+div.ant-message-notice-content {
+  background: #ecf5ed;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  height: 48px;
+  color: #ffffff;
+  background: #50429b;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}

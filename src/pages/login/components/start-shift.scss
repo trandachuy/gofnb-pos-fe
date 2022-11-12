@@ -1,0 +1,288 @@
+$shift_modal_height: 626px;
+
+@mixin media-breakpoint($breakpoint) {
+  @media screen and (max-height: $breakpoint) {
+    @content;
+  }
+}
+
+.start-shift-modal {
+  .ant-modal-content {
+    border-radius: 30px;
+    height: $shift_modal_height;
+    background-image: url(../../../assets/start-shift-background.png);
+    background-position: center top 70px;
+    background-repeat: no-repeat;
+
+    .ant-modal-body {
+      padding: 58px 66px 55px 61px;
+
+      .welcome-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        color: #50429b;
+        line-height: 70px;
+        margin-bottom: 0px;
+      }
+
+      .lets-input-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+        margin-top: 7px;
+        margin-bottom: 0px;
+      }
+
+      .initial-amount-text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 21px;
+        letter-spacing: 0.3px;
+        color: #000000;
+        margin-top: 66px;
+        margin-bottom: 0px;
+      }
+
+      .last-shift-remain-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: right;
+        margin-top: 40px;
+        color: #000000;
+      }
+
+      .btn-inventory-checking {
+        display: flex !important;
+        min-width: 262px;
+        margin-top: 40px;
+
+        svg,
+        span {
+          margin: auto;
+        }
+
+        span {
+          margin-left: 8px;
+        }
+      }
+
+      .btn-continue {
+        background: #50429b;
+        border-radius: 12px;
+        margin-top: 73px;
+        height: 80px;
+        width: 559px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        color: #ffffff;
+      }
+    }
+
+    .ant-modal-close-x {
+      margin-top: 25px;
+      margin-right: 21px;
+    }
+  }
+
+  .input-initial-amount {
+    border-radius: 16px;
+    height: 60px;
+    font-size: 20px;
+    background: #ffffff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    border: none;
+
+    .ant-input-number-input-wrap {
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .ant-input-number-handler-wrap {
+      display: none;
+    }
+
+    .ant-input-number-input {
+      padding-left: 16px;
+    }
+  }
+
+  .input-initial-amount:hover {
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+  }
+
+  .input-initial-amount:focus,
+  .input-initial-amount:visited,
+  .input-initial-amount:focus-within {
+    box-shadow: 0px 1px 4px #50429b;
+    border: none;
+  }
+
+  .input-initial-amount:placeholder-shown {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+    color: #9f9f9f;
+    padding-left: 16px;
+  }
+
+  .input-initial-amount[disabled] {
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    background: #f7f7f7;
+    border-color: #ffffff;
+    cursor: not-allowed;
+    opacity: 1;
+  }
+}
+
+.ant-input-number-group-addon {
+  background: transparent;
+  border-radius: 0 16px 16px 0;
+  font-size: 20px;
+  border: none;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: #000000;
+}
+
+.ant-input-number-wrapper.ant-input-number-group {
+  .input-initial-amount {
+    box-shadow: none;
+  }
+}
+
+.confirm-modal {
+  .ant-modal-content {
+    height: 463px;
+    border-radius: 40px;
+
+    .ant-modal-body {
+      padding: 30px 38px 33px 39px;
+
+      .text-style {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        color: #000000;
+      }
+
+      .previous-shift-text {
+        padding-top: 24px;
+      }
+
+      .difference-number-text {
+        padding-top: 4px;
+      }
+
+      .continue-text {
+        padding-top: 36px;
+      }
+
+      .btn-group {
+        margin-top: 44px;
+
+        .btn-cancel {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 23px;
+          letter-spacing: 0.3px;
+          color: #a5abde;
+          border: 1px solid #a5abde;
+          min-width: 99px !important;
+          height: 60px;
+          border-radius: 16px;
+        }
+
+        .btn-ok {
+          min-width: 85px !important;
+          height: 60px;
+          border-radius: 16px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: 0.3px;
+          color: #ffffff;
+          background: #ff8c21;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.great-modal {
+  .ant-modal-content {
+    border-radius: 30px;
+    height: 626px;
+    background-image: url(../../../assets/start-shift-background.png);
+    background-position: center top 70px;
+    background-repeat: no-repeat;
+
+    .ant-modal-body {
+      padding: 0;
+
+      .great-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 70px;
+        text-align: center;
+        color: #50429b;
+        padding-top: 179px;
+      }
+
+      .wish-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+        padding-top: 7px;
+      }
+
+      .btn-start {
+        background: #50429b;
+        border-radius: 12px;
+        margin-top: 82px;
+        height: 80px;
+        width: 559px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+@include media-breakpoint($shift_modal_height) {
+  .start-shift-modal {
+    .ant-modal-content {
+      height: 100%;
+    }
+
+    .ant-modal-body {
+      padding: 20px 20px !important;
+    }
+  }
+}

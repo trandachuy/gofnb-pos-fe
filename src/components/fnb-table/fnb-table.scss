@@ -1,0 +1,411 @@
+.fnb-table-wrapper {
+  width: 100%;
+
+  .ant-pagination-jump-prev,
+  .ant-pagination-jump-next {
+    .ant-pagination-item-link {
+      text-align: center;
+      margin: auto;
+      width: 100%;
+      .ant-pagination-item-link-icon {
+        color: #50429b;
+      }
+    }
+  }
+
+  .ant-pagination-prev:hover .ant-pagination-item-link,
+  .ant-pagination-next:hover .ant-pagination-item-link {
+    color: #50429b;
+    border-color: #50429b;
+  }
+
+  .eclipse-filter {
+    width: 24px;
+    height: 24px;
+    background: #ff8c21;
+
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+
+    border-radius: 50%;
+    font-size: 13px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -6px;
+    margin-right: -5px;
+
+    display: none;
+  }
+
+  .desktop-mode {
+    .button-title {
+      margin-left: 5px;
+    }
+
+    .button-title-calendar {
+      margin-left: 5px;
+    }
+
+    .btn-clear-filter {
+      margin-left: 5px;
+    }
+  }
+
+  .default-mode {
+    display: none;
+  }
+
+  .desktop-mode {
+    display: flex;
+  }
+
+  .row {
+    flex-flow: row wrap;
+  }
+
+  .row-reverse {
+    display: flex;
+    flex-flow: row-reverse;
+  }
+
+  .fnb-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .ant-checkbox-indeterminate .ant-checkbox-inner::after {
+    background-color: #ff8c21;
+  }
+
+  .fnb-select-single {
+    min-width: 210px;
+    width: auto;
+  }
+
+  .fnb-search-input {
+    max-width: 471px;
+    width: auto;
+    border: none;
+  }
+
+  .action-button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: #50429b;
+    min-width: 122px;
+    width: auto;
+    height: 60px;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-color: #ffffff;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 20px;
+
+    svg,
+    span {
+      margin: auto;
+    }
+  }
+
+  .search-bar {
+    min-width: 471px;
+    width: 471px;
+  }
+
+  .action-button:hover,
+  .action-button:focus {
+    color: #50429b;
+  }
+
+  .action-group {
+    width: 100%;
+  }
+}
+
+.fnb-tbl-pagination {
+  width: 100%;
+  display: flex;
+  margin-top: 32px;
+
+  .info-pagination {
+    display: flex;
+    width: 50%;
+
+    p {
+      text-indent: 3px;
+    }
+
+    .table-text-footer {
+      display: flex;
+      font-size: 18px;
+      color: #000000;
+      line-height: 24px;
+      font-family: "Plus Jakarta Sans";
+      font-weight: 400;
+    }
+
+    .record {
+      color: #50429b;
+      font-weight: 700;
+      padding-right: 3px;
+    }
+  }
+
+  .fnb-pagination {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+
+    li {
+      background: #fbfbfb;
+      border-radius: 16px;
+      width: 45px;
+      height: 44px;
+      display: inline-flex;
+
+      button {
+        background: #fbfbfb;
+        border-radius: 16px;
+        width: 45px;
+        height: 44px;
+      }
+    }
+
+    .ant-pagination-item,
+    .ant-pagination-item-active {
+      a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        margin: auto;
+      }
+    }
+
+    .ant-pagination-item {
+      a {
+        color: #2c2c2c;
+      }
+    }
+
+    .ant-pagination-item:hover {
+      border-color: #817cba;
+      background: #817cba;
+
+      a {
+        color: #ffffff;
+      }
+    }
+
+    .ant-pagination-item-active {
+      background: #50429b;
+      border-color: #50429b;
+
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.fnb-table {
+  .action-button-space {
+    margin-right: 25px;
+  }
+
+  .ant-pagination-prev:hover .ant-pagination-item-link,
+  .ant-pagination-next:hover .ant-pagination-item-link {
+    color: #50429b;
+    border-color: #50429b;
+  }
+}
+
+.hide-pagination-options {
+  .ant-pagination-options {
+    display: none;
+  }
+}
+
+.fnb-table {
+  .action-column {
+    width: 100px;
+  }
+  .ant-table-cell p {
+    font-size: 18px;
+  }
+
+  .ant-table-cell {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .ant-table-bordered {
+    border: none;
+  }
+
+  .ant-table-header {
+    border-radius: 16px;
+  }
+
+  table thead tr {
+    border-radius: 16px;
+  }
+
+  table thead tr th {
+    text-transform: uppercase;
+    background: #f9f8ff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    align-items: center;
+    color: #463796;
+    height: 72px;
+  }
+
+  .ant-table-thead > tr > th {
+    border-bottom: none;
+  }
+
+  .ant-table-tbody > tr > td {
+    border-bottom: none;
+    height: 96px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+  }
+
+  .ant-table-thead > tr > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    background-color: #f9f8ff;
+  }
+
+  .ant-table-container table > thead > tr > th:first-child {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding-left: 16px;
+  }
+  .ant-table-selection-column {
+    padding-right: 16px;
+  }
+
+  .ant-table-container table > thead > tr > th:last-child {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  table tbody tr:nth-of-type(odd) {
+    background: #f9f8ff;
+  }
+
+  .ant-table-container table > tbody > tr > td:first-child {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding-left: 16px;
+  }
+
+  .ant-table-container table > tbody > tr > td:last-child {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  .ant-pagination {
+    li {
+      background: #fbfbfb;
+      border-radius: 16px;
+      width: 45px;
+      height: 44px;
+      display: flex;
+
+      button {
+        background: #fbfbfb;
+        border-radius: 16px;
+        width: 45px;
+        height: 44px;
+      }
+    }
+
+    .ant-pagination-item,
+    .ant-pagination-item-active {
+      a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        margin: auto;
+      }
+    }
+
+    .ant-pagination-item {
+      a {
+        color: #2c2c2c;
+      }
+    }
+
+    .ant-pagination-item:hover {
+      border-color: #817cba;
+      background: #817cba;
+
+      a {
+        color: #ffffff;
+      }
+    }
+
+    .ant-pagination-item-active {
+      background: #50429b;
+      border-color: #50429b;
+
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+}
+.fnb-table-action-button {
+  display: flex;
+  svg,
+  span {
+    margin: auto;
+  }
+}
+.fnb-table-action-button:hover,
+.fnb-table-action-button:focus {
+  color: #50429b;
+  border: #ffffff;
+  background: #ffffff;
+}
+
+.fnb-table-tooltip {
+  .fnb-table-tooltip-content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+.fnb-table-tooltip .ant-tooltip-arrow .ant-tooltip-arrow-content {
+  --antd-arrow-background-color: #50429b;
+}
+
+.fnb-table-action-icon:hover > svg > path {
+  fill: #50429b;
+  stroke: #50429b;
+}

@@ -1,0 +1,149 @@
+@import "antd/dist/antd.css";
+@import "./variable";
+
+.icon-edit {
+  font-size: 18px;
+  color: #135200 !important;
+}
+
+.icon-del {
+  font-size: 18px;
+  color: red !important;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.d-flex-right {
+  display: inline-flex !important;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.form-filter-popover {
+  width: 350px;
+  .form-select {
+    width: 200px;
+  }
+}
+
+.color-primary {
+  color: #2d9aff !important;
+}
+
+.color-red {
+  color: red !important;
+}
+
+.trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+.fnb-pos-header {
+  height: auto !important;
+  padding: 0;
+}
+
+.fnb-right-side-menu {
+  background-color: white;
+  max-width: 450px !important;
+  width: auto !important;
+}
+
+.full-screen {
+  height: auto;
+}
+
+.fill-window {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+.text-bolder {
+  font-weight: bold;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-25 {
+  font-size: 25px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.scroll-container {
+  height: 500px;
+  overflow: auto;
+}
+
+.antd-input-text-center {
+  input {
+    text-align: center;
+  }
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-80 {
+  width: 80% !important;
+}
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  background: #ffffff;
+}

@@ -1,0 +1,2 @@
+export const DASHBOARD_CHANNEL = "DASHBOARD_CHANNEL";
+export const POS_CHANNEL = "POS_CHANNEL";

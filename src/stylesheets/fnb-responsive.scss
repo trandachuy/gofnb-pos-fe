@@ -1,0 +1,249 @@
+
+//#region xs: '(min-width: 575px)',
+@media (max-width: 575px) {
+    .page-not-found {
+        .page-background {
+            // height: 100%;
+        }
+        .img-background {
+            background-image: url(../assets/page-not-found/image_min-width-575.png);
+            background-position: center;
+            background-size: contain;
+            width: 46vh;
+            // height: 100%;
+        }
+        .head-text {
+            left: 21.72%;
+            right: 34.1%;
+            top: 8.87%;
+            bottom: 75.9%;
+
+            font-size: 60px;
+            line-height: 76px;
+        }
+        .exclamation-point {
+            // left: 70.89%;
+            left: 65.89%;
+            right: 18.59%;
+            top: 5.38%;
+            bottom: 74.97%;
+
+            font-size: 100px;
+            line-height: 126px;
+        }
+        .error-text {
+            left: 8.69%;
+            right: 17.95%;
+            top: 19.87%;
+            bottom: 68.69%;
+
+            font-size: 35px;
+            line-height: 41px;
+        }
+        .message-text {
+            left: 5.79%;
+            right: 12.05%;
+            top: 28.69%;
+            bottom: 58.61%;
+
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .button-bg {
+            width: 212px;
+            left: calc(50% - 212px/2 - 3px);
+            top: 81.15%;
+            bottom: 13.65%;
+        }
+
+        .button-text {
+            width: 149px;
+            font-size: 16px;
+        }
+    }
+
+    .page-not-permitted {
+        .img-background {
+            background-image: url(../assets/page-not-permitted/image_min-width-575.png);
+            background-position: center;
+            background-size: contain;
+            width: 46vh;
+        }
+        .head-text {
+            left: 21.72%;
+            right: 34.1%;
+            top: 8.87%;
+            bottom: 75.9%;
+
+            font-size: 60px;
+            line-height: 76px;
+        }
+        .exclamation-point {
+            left: 65.89%;
+            right: 18.59%;
+            top: 5.38%;
+            bottom: 74.97%;
+
+            font-size: 100px;
+            line-height: 126px;
+        }
+        .error-text {
+            left: 4.69%;
+            right: 17.95%;
+            top: 19.87%;
+            bottom: 68.69%;
+
+            font-size: 35px;
+            line-height: 41px;
+        }
+        .message-text {
+            left: 2.79%;
+            right: 12.05%;
+            top: 28.69%;
+            bottom: 58.61%;
+
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .button-bg {
+            width: 212px;
+            left: calc(50% - 212px/2 - 3px);
+            top: 81.15%;
+            bottom: 13.65%;
+        }
+
+        .button-text {
+            width: 149px;
+            font-size: 16px;
+        }
+    }
+}
+@media (min-width: 575px) {
+    
+}
+//#endregion
+
+//#region sm: '(min-width: 576px)',
+@media (max-width: 576px) {
+    
+}
+@media (min-width: 576px) {
+    
+}
+//#endregion
+
+//#region md: '(min-width: 768px)',
+@media (max-width: 768px) {
+    
+}
+@media (min-width: 768px) {
+    
+}
+//#endregion
+
+//#region lg: '(min-width: 992px)',
+@media (max-width: 992px) {
+    
+}
+@media (min-width: 992px) {
+    
+}
+//#endregion
+
+//#region xl: '(min-width: 1200px)',
+/// Apply this class to the body to make it responsive to the screen size <= xl
+@media (max-width: 1200px) {
+
+}
+/// Apply this class to the body to make it responsive to the screen size >= xl
+@media (min-width: 1200px) {
+    .page-not-found {
+        .page-background {
+            // height: 100vh;
+        }
+        .img-background {
+            // height: 100%;
+        }
+        .head-text {
+            left: 41.28%;
+            top: 3.26%
+        }
+        .exclamation-point {
+            left: 59.51%;
+            top: 0%;
+        }
+        .error-text {
+            top: 17.43%;
+            word-spacing: 10px;
+        }
+        .message-text {
+            width: max-content;
+            top: 25%;
+        }
+        .button-bg {
+            left: calc(54% - 248px/2 - 41px);
+        }
+    }
+
+    .page-not-permitted {
+        .head-text {
+            left: 41.28%;
+            top: 3.26%
+        }
+        .exclamation-point {
+            left: 59.51%;
+            top: 0%;
+        }
+        .error-text {
+            top: 17.43%;
+            word-spacing: 10px;
+        }
+        .message-text {
+            width: max-content;
+            top: 25%;
+        }
+        .button-bg {
+            left: calc(54% - 248px/2 - 41px);
+        }
+    }
+}
+//#endregion
+
+//#region xxl: '(min-width: 1600px)',
+@media (max-width: 1600px) {
+   
+}
+@media (min-width: 1600px) {
+    .page-not-found {
+        .head-text {
+            left: 41.28%;
+        }
+        .exclamation-point {
+            left: 56.51%;
+        }
+        .message-text {
+            width: max-content;
+        }
+        .button-bg {
+            left: calc(53% - 248px/2 - 41px);
+        }
+    }
+
+    .page-not-permitted {
+        .head-text {
+            left: 41.28%;
+        }
+        .exclamation-point {
+            left: 56.51%;
+        }
+        .message-text {
+            width: max-content;
+        }
+        .button-bg {
+            left: calc(55% - 248px/2 - 41px);
+            top: 88.96%;
+            bottom: 5.58%;
+        }
+    }
+}
+//#endregion

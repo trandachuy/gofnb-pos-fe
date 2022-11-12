@@ -1,0 +1,28 @@
+
+.fnb-alert-warning {
+    .ant-modal-header {
+        text-align: center;
+    
+        .ant-modal-title {
+            color: #ff9900;
+            font-weight: bolder;
+        }
+    
+        span svg path {
+            fill: #ff9900;
+        }
+    }
+
+    .ant-modal-footer {
+        button:hover {
+            background-color: #f29100;
+            color: #fff;
+        }
+        button {
+            background-color: #ff9900;
+            border-color: #ff9900;
+            color: #fff;
+            min-width: 150px;
+        }
+    }
+}

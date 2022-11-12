@@ -1,0 +1,158 @@
+.create-customer-form {
+  .checkBox-margin {
+    margin-top: 34px;
+  }
+
+  .note {
+    textarea {
+      min-height: 120px !important;
+    }
+  }
+
+  .btn-add {
+    min-width: 109px !important;
+  }
+
+  .title-group {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .fnb-input-with-count .ant-input-suffix {
+    line-height: 21px !important;
+  }
+
+  .form-row {
+    margin-bottom: 10px;
+  }
+
+  .fnb-card {
+    .ant-card-body {
+      padding-bottom: 10px;
+    }
+  }
+
+  .form-gender {
+    display: block;
+    height: 60px;
+
+    .ant-form-item-control {
+      margin: auto;
+    }
+
+    .ant-radio-wrapper {
+      margin-right: -30px !important;
+    }
+  }
+
+  .last-gender-option {
+    padding-left: 80px !important;
+  }
+
+  .customer-text-require {
+    color: #db1b1b;
+  }
+
+  div.customer-button-control {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+
+    button.second-button,
+    button.primary-button {
+      gap: 12px;
+      height: 60px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 25px;
+      text-align: center;
+      font-style: normal;
+      margin-right: 24px;
+      border-radius: 16px;
+      letter-spacing: 0.3px;
+      font-family: "Plus Jakarta Sans";
+    }
+
+    button.second-button {
+      color: #463796;
+      border: 1px solid #463796;
+      width: 95px;
+    }
+
+    button.primary-button {
+      color: #ffffff !important;
+      background: #ff8c21 !important;
+      width: 101px;
+      font-size: 18px;
+    }
+  }
+
+  .title-customer-modal {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #50429b;
+  }
+}
+
+/*Adapt Screen Resolution 4:3*/
+@media screen and (max-width: 1024px) {
+  .create-customer-form {
+    .note {
+      textarea {
+        min-height: 66px !important;
+        max-height: 66px !important;
+      }
+    }
+    div.customer-button-control {
+      margin-top: 0px;
+      button.second-button,
+      button.primary-button {
+        gap: 12px;
+        height: 48px;
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+    .title-customer-modal {
+      font-size: 32px;
+    }
+    .ant-form-item {
+      margin-bottom: 18px;
+    }
+    .fnb-input-with-count .ant-input:placeholder-shown,
+    .fnb-input-with-count .ant-input,
+    .fnb-input-addon-before .ant-input-group-addon label,
+    .fnb-input-addon-before input,
+    .fnb-input:placeholder-shown,
+    .fnb-date-picker input {
+      font-size: 14px;
+    }
+    .fnb-select-single .ant-select-selector .ant-select-selection-placeholder,
+    .fnb-select-single .ant-select-selector .ant-select-selection-search .ant-select-selection-search-input,
+    .fnb-select-single .ant-select-selector .ant-select-selection-item {
+      font-size: 14px !important;
+      line-height: 50px !important;
+    }
+    .fnb-form-label {
+      font-size: 16px;
+    }
+    .ant-radio + span {
+      font-size: 18px;
+    }
+    .fnb-input-with-count,
+    .fnb-input-addon-before input,
+    .fnb-input,
+    .fnb-date-picker {
+      height: 48px;
+    }
+    .fnb-select-single .ant-select-selector {
+      height: 48px !important;
+    }
+    .form-row {
+      margin-bottom: 0px;
+    }
+  }
+}

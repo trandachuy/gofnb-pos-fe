@@ -1,0 +1,14 @@
+.modal-pos-large {
+  .ant-modal-header {
+    text-align: center;
+
+    .ant-modal-title {
+      font-size: 22px;
+    }
+  }
+
+  .ant-modal-footer {
+    display: flex;
+    justify-content: center;
+  }
+}

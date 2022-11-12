@@ -1,0 +1,318 @@
+.medium-template {
+  background: #ffffff;
+  width: 302px;
+
+  .template-header {
+    padding: 11px 5px;
+    width: 100%;
+    max-height: 88px;
+
+    table {
+      width: 100%;
+      font-family: "Roboto Condensed";
+      font-style: normal;
+      text-align: center;
+      color: #000000;
+
+      img {
+        width: 66px;
+        height: 66px;
+      }
+
+      .store-name {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      .branch-address {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  .template-invoice {
+    padding: 11px 8px 5px 8px;
+    width: 100%;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+
+    table {
+      width: 100%;
+
+      .invoice-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      .order-code {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+
+  .template-table-product {
+    width: 100%;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+
+    .tr-header-table {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      height: 24px;
+      background-color: #b3b3b3;
+    }
+  }
+
+  .template-temporary {
+    padding: 7px 8px 5px 8px;
+    width: 100%;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+
+    table {
+      width: 100%;
+    }
+  }
+
+  .template-final-price {
+    width: 100%;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+
+    .tr-header-table {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      height: 24px;
+      background-color: #b3b3b3;
+
+      th {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+
+  .template-footer {
+    padding: 12px;
+    width: 100%;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+
+    table {
+      width: 100%;
+
+      .thanks-message {
+        text-align: center;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      img {
+        height: 80px;
+        width: 80px;
+      }
+    }
+  }
+
+  .bill-line {
+    margin: 0px;
+    border: 1px dashed #b3b3b3;
+  }
+}
+
+.small-template {
+  background: #ffffff;
+  width: 215px;
+
+  .template-header {
+    padding: 11px 5px;
+    width: 100%;
+    max-height: 77px;
+
+    table {
+      width: 100%;
+      font-family: "Roboto Condensed";
+      font-style: normal;
+      text-align: center;
+      color: #000000;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .store-name {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      .branch-address {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+  }
+
+  .template-invoice {
+    padding: 12px 5px 5px 5px;
+    width: 100%;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+
+    table {
+      width: 100%;
+
+      .invoice-title {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      .order-code {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+
+  .template-table-product {
+    width: 100%;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+
+    .tr-header-table {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14px;
+      height: 24px;
+      background-color: #b3b3b3;
+    }
+
+    .tr-topping-option {
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+
+  .template-temporary {
+    padding: 7px 5px 7px 5px;
+    width: 100%;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+
+    table {
+      width: 100%;
+    }
+  }
+
+  .template-final-price {
+    width: 100%;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+
+    .tr-header-table {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      height: 24px;
+      background-color: #b3b3b3;
+
+      th {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+
+  .template-footer {
+    padding: 5px;
+    width: 100%;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+
+    table {
+      width: 100%;
+
+      .thanks-message {
+        text-align: center;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      img {
+        height: 80px;
+        width: 80px;
+      }
+    }
+  }
+
+  .bill-line {
+    margin: 0px;
+    border: 1px dashed #b3b3b3;
+  }
+}

@@ -1,0 +1,345 @@
+.container {
+  padding: 5px;
+  height: 100vh;
+}
+
+.boxLeft {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background: transparent;
+}
+
+.thank-container {
+  height: 100vh;
+  flex-flow: row nowrap;
+  .thank-box-left {
+    display: flex;
+    align-items: center;
+    .left-image-container {
+      width: 520px;
+      max-width: 520px;
+      height: 100%;
+      background-image: url(../../assets/left-img-secondary-thank-screen.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  .thank-box-right {
+    display: flex;
+    align-items: center;
+    .right-image-container {
+      margin-left: 21px;
+      max-width: 1358px;
+      width: 1358px;
+      height: 1050px;
+      background-image: url(../../assets/right-img-secondary-thank-screen.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: flex;
+      align-items: center;
+      .thank-box {
+        margin: auto;
+        text-align: center;
+        .title {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 60px;
+          line-height: 70px;
+          color: #50429b;
+          margin-bottom: 24px;
+        }
+        .thank-text {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 38px;
+          color: #000000;
+        }
+      }
+    }
+  }
+}
+
+.boxLeft > img {
+  max-width: 30%;
+}
+
+.boxRight {
+  position: relative;
+}
+
+.boxRight h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+}
+
+.boxRight > img {
+  z-index: 0;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 70%;
+  position: absolute;
+  margin: auto;
+}
+
+.cartItemContainer {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+
+.itemWrapper {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  border: 1px black solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.itemWrapper > .imageBox {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageBox > img {
+  width: 64px;
+  height: 64px;
+}
+
+.itemWrapper > .infoBox {
+  width: 55%;
+}
+
+.infoBox .productName {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.productName .ticketWrapper {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticketWrapper .ticket {
+  color: #e06666;
+  font-size: 25px;
+}
+
+.ticketWrapper .priceOnTicket {
+  position: absolute;
+  z-index: 1;
+  font-size: 12px;
+}
+
+.infoBox > .materiaInfo {
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+.itemWrapper > .priceBox {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.priceBox .priceWrapper {
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.summarizePrices {
+  margin-top: 50px;
+  height: 10vh;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.summarizePrices .textRight {
+  text-align: right;
+  font-weight: bold;
+}
+
+.summarizePrices .label {
+  font-size: 14px;
+  justify-content: right;
+  align-items: center;
+  display: flex;
+}
+
+.summarizePrices .totalPrices {
+  font-size: 18px;
+  color: #ffae08;
+  justify-content: right;
+  align-items: center;
+  display: flex;
+}
+
+.thanks-box {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.thanks-box > p.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.c-carousel-box {
+  position: relative;
+
+  overflow: hidden;
+
+  &--fullscreen {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .carousel-box {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-wraper {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .rec-slider-container {
+    margin: 0;
+    height: 100vh;
+  }
+
+  .rec-item-wrapper {
+    height: 100vh;
+    display: block;
+    position: relative;
+  }
+}
+
+.c-secondary-screen-page {
+  .container {
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.secondary {
+  width: 100%;
+  height: 100%;
+
+  .ant-col {
+    position: relative;
+  }
+
+  .fnb-logo {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    .content {
+      margin: auto;
+
+      .c-label {
+        text-align: center;
+        svg {
+          margin-top: 45px;
+          height: 80px;
+          width: 300px;
+        }
+      }
+      .c-icon {
+        .store-logo {
+          border-radius: 32px;
+        }
+      }
+    }
+  }
+
+  .bg {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .bg-top-left {
+      position: absolute;
+    }
+
+    .bg-top-right {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  img {
+    height: 100vh;
+    object-position: center;
+  }
+}
+
+.secondary-screen-order-detail-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  .left-content-wrapper {
+    width: 27%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .right-content-wrapper {
+    width: 73%;
+    height: 100%;
+  }
+}
+.hHJTFD {
+  margin: 0 !important;
+}
+
+@media screen and (max-width: 1026px) {
+  .thank-box-left {
+    width: 371px;
+  }
+  .thank-box-right {
+    .right-image-container {
+      height: 100vh !important;
+      width: 618px !important;
+      background-color: #f7f5ff;
+      background-clip: content-box, padding-box;
+    }
+  }
+}

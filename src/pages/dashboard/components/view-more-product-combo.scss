@@ -1,0 +1,89 @@
+.modal-view-combo-detail{
+  width: 452px !important;
+  height: 496px;
+  .ant-modal-content{
+    border-radius: 30px;
+    .ant-modal-body{
+      padding: unset !important;
+      .header-detail-combo{
+        height: 74px;
+        background: #50429B;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 12px 24px;
+        border-radius: 30px 30px 0 0;
+        .name-combo{
+          font-size: 24px;
+          font-weight: 500;
+        }
+      }
+      .content-detail-combo{
+        height: 422px;
+        background: #F7F5FF;
+        border-radius: 0 0 30px 30px;
+        padding: 19px 24px 26px 24px;
+        overflow-y: auto;
+        .item-combo{
+          height: 64px;
+        }        
+        .product-item-even{
+          background: #ffffff !important;
+        }
+      .product-combo-name{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 0 21px;
+        border-radius: 16px;
+        font-size: 16px;
+        font-weight: 550;
+          .ant-typography{
+            margin-bottom: unset !important;
+          }
+        }
+      }
+      .content-detail-combo::-webkit-scrollbar{
+        width: 3px !important;
+        height: 20px !important;  
+        scroll-behavior: smooth !important;
+      }      
+      .content-detail-combo::-webkit-scrollbar-thumb{
+        background-color: #50429B;
+      }
+      .ant-modal-close{
+        width: 50px;
+        height: 50px;
+        border-radius: 20px;
+        background: #463796;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 12px;
+        margin-right: 24px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.selling-price, .original-price{
+  margin-bottom: unset !important;
+}
+
+.original-price{
+  font-size: 14px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.selling-price{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.icon-close{
+  cursor: pointer;
+}

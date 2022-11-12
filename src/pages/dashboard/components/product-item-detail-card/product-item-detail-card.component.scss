@@ -1,0 +1,25 @@
+#card-description-active:checked ~ .description-wrapper {
+  max-height: 900px;
+}
+
+#card-description-active:checked ~ label > .fnb-corner-button > button {
+  svg {
+    transform: rotate(-180deg);
+  }
+}
+
+#card-description-active:not(:checked) ~ label > .fnb-corner-button > button {
+  svg {
+    transform: rotate(0deg);
+  }
+}
+
+.description-wrapper {
+  -ms-transition: max-height 0.8s;
+  -o-transition: max-height 0.8s;
+  -webkit-transition: max-height 0.8s;
+  transition: max-height 0.5s;
+
+  max-height: 0;
+  overflow: hidden;
+}

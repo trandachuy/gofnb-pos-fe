@@ -1,0 +1,82 @@
+.fnb-text-area-with-count {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+
+  ::-webkit-scrollbar {
+    width: 130px;
+    height: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $main-color;
+    border-radius: 2px;
+    border-right: 126px white solid;
+    background-clip: padding-box;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: $main-color;
+  }
+  textarea {
+    background: #ffffff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 16px;
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.3px;
+    border: none;
+    resize: none;
+    padding-right: 130px;
+  }
+
+  .ant-input:placeholder-shown {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+    color: #9f9f9f;
+    padding-left: 16px;
+  }
+
+  .ant-input:hover {
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+  }
+  .ant-input:focus {
+    box-shadow: 0px 1px 4px #50429b;
+    border: none;
+  }
+}
+
+.fnb-text-area-with-count.ant-input-textarea-show-count::after {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.3px;
+  color: #9f9f9f;
+  padding-top: 5px;
+  position: absolute;
+  right: 16px;
+  top: 0;
+}
+
+.note {
+  textarea {
+    min-height: 197px !important;
+  }
+}

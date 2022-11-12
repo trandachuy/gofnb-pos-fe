@@ -1,0 +1,15 @@
+export const BroadcastActions = {
+  Cart: 0,
+  PaymentHasBeenCompleted: 1,
+  RedirectVnPay: 2,
+  CancelPayment: 3,
+  ResponseFromVnPay: 4,
+  CancelMomoPayment: 5,
+  RedirectMomo: 6,
+  ResponseFromMomo: 7,
+  PaymentSuccessfully: 8,
+  PaymentUnsuccessfully: 9,
+  ShowThanks: 10,
+  ChangePaymentMethod: 11,
+  ClearScreen: 12,
+};

@@ -1,0 +1,740 @@
+.order-detail-form-style {
+  margin-left: 15px !important;
+  .title-order-detail-modal {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #50429b;
+  }
+
+  .order-detail-customer-info {
+    margin-bottom: 20px;
+  }
+
+  .header-order-detail-modal {
+    width: 1213px;
+    height: 85px;
+    background: #f7f5ff;
+    box-shadow: inset 8px 8px 16px #ebe8fe, inset -8px -8px 16px #ffffff;
+    border-radius: 24px;
+    padding-top: 26px;
+    margin-top: 21px;
+    margin-bottom: 42px;
+    .order-header {
+      display: flex;
+      .order-type {
+        margin-left: 235px;
+        display: flex;
+      }
+      .order-type > svg {
+        margin-right: 18px;
+      }
+      .order-time {
+        margin-left: 48px;
+        display: flex;
+      }
+      .order-time > svg {
+        margin-right: 12px;
+      }
+      .order-total-items {
+        margin-left: 48px;
+        display: flex;
+      }
+      .order-total-items > svg {
+        margin-right: 12px;
+      }
+      .order-area {
+        margin-left: 48px;
+        display: flex;
+      }
+      .order-current-status {
+        margin-left: 48px;
+        display: flex;
+      }
+      .order-area > svg {
+        margin-right: 12px;
+      }
+      .order-text-header {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        align-items: center;
+        color: #50429b;
+        line-height: 34px;
+        letter-spacing: 0.3px;
+      }
+    }
+
+    .order-header-delivery {
+      display: flex;
+      .order-type {
+        margin-left: 377px;
+        display: flex;
+      }
+      .order-type > svg {
+        margin-right: 18px;
+      }
+      .order-time {
+        margin-left: 48px;
+        display: flex;
+      }
+      .order-time > svg {
+        margin-right: 12px;
+      }
+      .order-total-items {
+        margin-left: 48px;
+        display: flex;
+      }
+      .order-total-items > svg {
+        margin-right: 12px;
+      }
+      .order-text-header {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        align-items: center;
+        color: #50429b;
+        line-height: 34px;
+        letter-spacing: 0.3px;
+      }
+    }
+  }
+
+  .group-action-payment {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px !important;
+    .btn {
+      height: 80px;
+      border-radius: 16px;
+      min-width: unset !important;
+    }
+
+    .ant-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .btn-payment-order {
+      margin-left: 15px;
+      width: 564px;
+      height: 82px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+      background: #ff8c21;
+      color: #fff;
+      text-transform: uppercase;
+
+      .icon-payment {
+        margin-right: 25px;
+      }
+    }
+  }
+  .oder-group-button {
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 28px;
+    padding-left: 15px;
+    .order-button {
+      display: flex;
+      cursor: pointer;
+      width: 156px !important;
+      min-width: 156px !important;
+      height: 109px;
+      background: #f7f5ff;
+      box-shadow: 8px 8px 16px #ebe8fe, -8px -8px 16px #ffffff;
+      border-radius: 24px;
+      text-align: center;
+      padding-top: 62px;
+      margin-right: 48px;
+      span {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.3px;
+        color: #50429b;
+        margin: auto;
+        margin-bottom: 23px;
+      }
+      svg {
+        position: absolute;
+        margin-top: -35px;
+        margin-left: 64px;
+      }
+    }
+    .order-button-cancel {
+      margin: auto !important;
+    }
+    .order-button-draft {
+      width: 272px !important;
+      min-width: 272px !important;
+      height: 109px;
+      background: #f7f5ff;
+      box-shadow: 8px 8px 16px #ebe8fe, -8px -8px 16px #ffffff;
+      border-radius: 24px;
+      text-align: center;
+      padding-top: 62px;
+      margin-right: 20px;
+      span {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.3px;
+        color: #50429b;
+      }
+      svg {
+        position: absolute;
+        margin-top: -32px;
+        margin-left: 34px;
+      }
+    }
+  }
+
+  .order-detail-info {
+    padding: 30px 20px 0px 20px;
+    width: 594px;
+    background: #f0edfd;
+    border-radius: 16px;
+    margin-bottom: 48px;
+    padding-bottom: 26px;
+
+    .order-sub-total {
+      .order-sub-total-text {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 0.3px;
+        color: #50429b;
+        margin-top: -5px !important;
+        margin-left: 11px;
+        position: absolute;
+      }
+      .order-sub-total-value {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 0.3px;
+        color: #50429b;
+        float: right;
+      }
+    }
+    .order-promotion {
+      margin-top: 22px;
+      .order-promotion-text {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 0.3px;
+      }
+
+      .order-promotion-text > span {
+        margin-left: 8px;
+        margin-right: 6px;
+      }
+
+      .order-promotion-text > svg {
+        margin-bottom: -7px;
+      }
+      .order-promotion-value {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+        float: right;
+      }
+      .arrow-icon {
+        margin-bottom: 5px !important;
+        margin-left: 7px;
+      }
+    }
+
+    .order-fee {
+      margin-top: 22px;
+      .order-fee-text {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 0.3px;
+      }
+
+      .order-fee-text > span {
+        margin-left: 8px;
+        margin-right: 6px;
+      }
+
+      .order-fee-text > svg {
+        margin-bottom: -7px;
+      }
+      .order-fee-value {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+        float: right;
+      }
+
+      .arrow-icon {
+        margin-bottom: 5px !important;
+        margin-left: 7px;
+      }
+    }
+
+    .order-tax-take-away {
+      margin-top: 10px;
+    }
+
+    .order-tax {
+      margin-top: 32px;
+      .order-tax-text {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 0.3px;
+      }
+
+      .order-tax-text > span {
+        margin-left: 8px;
+        margin-right: 6px;
+      }
+
+      .order-tax-text > svg {
+        margin-bottom: -7px;
+      }
+      .order-tax-value {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+        float: right;
+      }
+
+      .arrow-icon {
+        margin-bottom: 5px !important;
+        margin-left: 7px;
+      }
+    }
+
+    .order-shipping {
+      .order-shipping-text {
+        span {
+          margin-left: 8px;
+          margin-right: 6px;
+        }
+        svg {
+          margin-bottom: -5px;
+        }
+      }
+
+      .order-shipping-value {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+        float: right;
+      }
+
+      .arrow-icon {
+        margin-bottom: 5px !important;
+        margin-left: 14px;
+      }
+      .delivery-title {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 0.3px;
+      }
+      .delivery-method {
+        margin-left: 35px !important;
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        color: #626262;
+      }
+    }
+
+    .order-payment {
+      margin-top: 22px;
+      .order-payment-text {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+        margin-left: 11px;
+        position: absolute;
+        letter-spacing: 0.3px;
+      }
+      .order-payment-value {
+        float: right;
+        .payment-text {
+          font-family: "Plus Jakarta Sans";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          color: #000000;
+          text-align: right;
+        }
+
+        .paid {
+          width: 65px;
+          height: 24px;
+          background: #50429b;
+          border-radius: 16px;
+          text-align: center;
+          float: right;
+
+          .paid-text {
+            font-family: "Plus Jakarta Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.3px;
+            color: #ffffff;
+          }
+        }
+        .unpaid {
+          width: 84px;
+          height: 24px;
+          background: #db1b1b;
+          border-radius: 16px;
+          text-align: center;
+          float: right;
+          .unpaid-text {
+            font-family: "Plus Jakarta Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.3px;
+            color: #ffffff;
+          }
+        }
+        .refunded {
+          width: 84px;
+          height: 24px;
+          background: #ff8c21;
+          border-radius: 16px;
+          text-align: center;
+          float: right;
+          .refunded-text {
+            font-family: "Plus Jakarta Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.3px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .order-total {
+      margin-top: 77px;
+      .order-total-text {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        color: #50429b;
+      }
+      .order-total-value {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        color: #50429b;
+        float: right;
+      }
+    }
+  }
+
+  .order-detail-items-scroll {
+    max-height: 640px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .order-detail-items-scroll::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .order-detail-items-scroll::-webkit-scrollbar-track {
+    border-radius: 2px;
+  }
+
+  .order-detail-items-scroll::-webkit-scrollbar-thumb {
+    background: #50429b;
+    border-radius: 2px;
+  }
+
+  .order-detail-items-scroll::-webkit-scrollbar-thumb:hover {
+    background: #817cba;
+  }
+}
+.order-detail-popover {
+  .ant-popover-inner {
+    .ant-popover-inner-content {
+      padding: 12px 0px;
+      width: 429px;
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 24px 20px 24px 20px;
+      .title-detail {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        color: #000000;
+      }
+      .detail-value {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        color: #000000;
+        float: right;
+      }
+
+      .title-delivery {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        color: #000000;
+        margin-left: 34px;
+        word-break: break-word;
+        margin-top: 4px;
+      }
+
+      .title-delivery-address {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        color: #50429b;
+        margin-bottom: -18px;
+      }
+
+      .title-delivery-address > span {
+        margin-left: 33px;
+      }
+
+      .title-delivery-address > svg {
+        position: absolute;
+      }
+    }
+    background: #ffffff;
+    border-radius: 8px;
+  }
+}
+
+.order-status {
+  border-radius: 16px;
+  padding: 7px 14px;
+}
+
+/*Adapt Screen Resolution 4:3*/
+@media screen and (max-width: 1024px) {
+  .order-detail-form-style {
+    margin-left: 0px !important;
+    .group-action-payment {
+      margin-bottom: 0px !important;
+    }
+    .title-order-detail-modal {
+      font-size: 32px;
+    }
+    .order-detail-customer-info {
+      margin-bottom: 12px;
+      .ant-image.ant-image-error {
+        width: 48px !important;
+        height: 48px !important;
+        img {
+          width: 48px !important;
+          height: 48px !important;
+          object-fit: cover;
+        }
+      }
+    }
+    .header-order-detail-modal {
+      width: 100%;
+      height: 60px;
+      padding-top: 0px;
+      margin-top: 21px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .order-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .order-type {
+          margin-left: 0px;
+        }
+        .order-text-header {
+          font-size: 16px;
+          line-height: 20px;
+        }
+        .order-type,
+        .order-time,
+        .order-total-items,
+        .order-area {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    .order-detail-info {
+      padding: 20px 14px;
+      width: 431px;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+
+      .order-sub-total {
+        .order-sub-total-text {
+          font-size: 18px;
+          margin-top: 0px !important;
+        }
+      }
+      .order-tax,
+      .order-promotion,
+      .order-fee,
+      .order-payment,
+      .order-total {
+        .ant-col-10 {
+          display: block;
+          flex: 0 0 66.66666667%;
+          max-width: 66.66666667%;
+        }
+        .ant-col-6 {
+          display: block;
+          flex: 0 0 0%;
+          max-width: 0%;
+        }
+      }
+      .order-tax {
+        margin-top: 22px;
+        .order-tax-text {
+          font-size: 14px;
+        }
+      }
+      .order-promotion {
+        .order-promotion-text {
+          font-size: 14px;
+        }
+      }
+      .order-fee {
+        .order-fee-text {
+          font-size: 14px;
+        }
+      }
+      .order-payment {
+        .order-payment-text {
+          font-size: 14px;
+        }
+      }
+      .order-total {
+        margin-top: 25px;
+        padding-bottom: 25px;
+        margin-bottom: 24px;
+        .order-total-text {
+          font-size: 24px;
+        }
+        .order-total-value {
+          font-size: 24px;
+          line-height: 24px;
+        }
+      }
+    }
+    .oder-group-button {
+      margin-bottom: 12px;
+      padding-left: 15px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .order-button {
+        width: 115px !important;
+        min-width: 115px !important;
+        height: 68px;
+        border-radius: 16px;
+        padding-top: 0px;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        svg {
+          margin-top: -20px;
+          margin-left: 0px;
+          width: 25px;
+        }
+      }
+
+      .order-button-draft {
+        width: 115px !important;
+        min-width: 115px !important;
+        height: 68px;
+        border-radius: 16px;
+        padding-top: 0px;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span {
+          font-size: 14px;
+          margin-bottom: -20px;
+        }
+        svg {
+          margin-top: -20px;
+          margin-left: 0px;
+          width: 25px;
+        }
+      }
+    }
+    .order-detail-items-scroll {
+      max-height: 520px;
+    }
+  }
+}

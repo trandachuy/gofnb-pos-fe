@@ -1,0 +1,81 @@
+.delete-confirm-modal {
+    button {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .ant-modal-content {
+        border-radius: 48px;
+    }
+
+    .ant-modal-header {
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        background-color: #ECF1F9;
+        height: 102px;
+        position: relative;
+    }
+
+    .ant-modal-title {
+        color: #50429B;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .ant-modal-body {
+        text-align: center;
+        color: #000000;
+        font-size: 18px;
+        line-height: 36px;
+        font-weight: 500;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .ant-modal-footer {
+        text-align: center;
+        border-top: none;
+        padding-bottom: 8%;
+    }
+
+    .ant-btn {
+        height: 55px;
+        min-width: 183px;
+        border-radius: 16px;
+    }
+
+    .ant-btn-default {
+        min-width: 180px;
+        border: 1px solid #A5ABDE;
+        color: #A5ABDE;
+    }
+
+    .ant-btn-default:hover {
+        border: 1px solid #A5ABDE;
+        color: #A5ABDE;
+    }
+
+    .ant-btn-dangerous {
+        background-color: #FC0D1B;
+        color: #FFFFFF;
+        border: none;
+    }
+
+    .ant-btn-dangerous:hover {
+        background-color: #d90b17;
+        color: #FFFFFF;
+        border: none;
+    }
+}
+
+.style-text-confirm-delete {
+    color: #FC0D1B;
+}

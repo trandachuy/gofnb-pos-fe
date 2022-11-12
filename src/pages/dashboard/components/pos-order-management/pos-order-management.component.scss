@@ -1,0 +1,232 @@
+.pos-order-modal {
+    .ant-modal-content {
+        background-color: #fff;
+        border-radius: 30px;
+        --growth-from: 0.5;
+        --growth-to: 1;
+        animation: growth linear 0.5s;
+        .ant-modal-close {
+            margin: 20px 11px 0 0;
+            background-color: #F7F5FF;
+            border-radius: 20px;
+            .ant-modal-close-x {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .anticon.anticon-close.ant-modal-close-icon {
+                color: #50429B;
+                font-size: 26px;
+            }
+        }
+    }
+
+    .ant-modal-header {
+      text-align: center;
+  
+      .ant-modal-title {
+          font-size: 22px;
+      }
+    }
+    
+    .ant-modal-footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pos-order-header {
+        height: 82px;
+        position: relative;
+        h3 {
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 47px;
+            text-align: center;
+            color: #50429B;
+        }
+    }
+
+    .pos-order-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .ant-layout-content {
+            padding-top: 23px;
+            border-radius: 16px;
+            height: 96px;
+            overflow: hidden !important;  
+            .ant-radio-button-wrapper-checked {
+                .item-text{
+                    color: #fff;
+                }
+            }
+            .ant-radio-group {
+                label {
+                   box-shadow: none !important;
+                }
+            }
+            .ant-radio-button {
+                border: none;
+                outline: none;
+            }
+            span.ant-radio-button.ant-radio-button-checked {
+                height: 73px;
+                background-color: #50429B;
+                border-radius: 16px;
+            }
+            span{
+                font-family: 'Plus Jakarta Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 73px;
+                letter-spacing: 0.3px;
+                color: #50429B;
+                padding: 24px 25px;
+            }
+            .ant-radio-button-wrapper {
+                border: none;
+                outline: none;
+                background-color: #F7F5FF;
+                height: 100%;
+                padding: 0px;
+            }
+            .ant-radio-button-wrapper::before {
+                width: 0px;
+            }
+            .ant-radio-button-wrapper-checked:not([class*=" ant-radio-button-wrapper-disabled"]).ant-radio-button-wrapper:first-child {
+                box-shadow: none;
+            }
+        }
+        .totalOrderConfirm{
+            position: absolute;
+            left: 175px;
+            top: 0;
+            width: 41.53px;
+            height: 41.53px;
+            background-color: #ffffff;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 90%;
+            z-index: 3 !important;
+        }
+        .totalOrderConfirmBlock {
+            width: 33.98px;
+            height: 33.98px;
+            background-color: #DB1B1B;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 90%;
+            color: #FFFFFF;
+            letter-spacing: 0.3px;
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        .tabToConfirm{
+            border-radius:16px;
+        }
+        .tabServing{
+            border-radius:16px 0 0 16px;
+            margin-left: 18px;
+        }
+        .tabDraft{
+            border-radius:0 16px 16px 0;
+        }
+    }
+}
+.visibility-hidden {
+visibility: hidden;
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
+/*Adapt Screen Resolution 4:3*/
+@media screen and (max-width: 1024px) {
+    .ant-modal.pos-order-modal {
+        top: 15px;
+    }
+    .pos-order-modal {
+        .ant-modal-content {
+            .ant-modal-body {
+                padding: 12px;
+            }
+        }
+        width: 924px!important;
+        .pos-order-header {
+            height: 62px;
+            h3 {
+                font-size: 32px;
+            }
+        }
+        .pos-order-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .ant-layout-content {
+                border-radius: 16px;
+                height: 71px;
+                overflow: hidden !important;
+                .ant-radio-button-wrapper-checked {
+                    .item-text{
+                        color: #fff;
+                    }
+                }
+                .ant-radio-group {
+                    label {
+                       box-shadow: none !important;
+                    }
+                }
+                .ant-radio-button {
+                    border: none;
+                    outline: none;
+                }
+                span.ant-radio-button.ant-radio-button-checked {
+                    height: 48px;
+                    background-color: #50429B;
+                    border-radius: 16px;
+                }
+                span{
+                    font-family: 'Plus Jakarta Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 48px;
+                    letter-spacing: 0.3px;
+                    color: #50429B;
+                    padding: 12px 13px;
+                }
+                .ant-radio-button-wrapper {
+                    border: none;
+                    outline: none;
+                    background-color: #F7F5FF;
+                    height: 100%;
+                    padding: 0px;
+                }
+                .ant-radio-button-wrapper::before {
+                    width: 0px;
+                }
+                .ant-radio-button-wrapper-checked:not([class*=" ant-radio-button-wrapper-disabled"]).ant-radio-button-wrapper:first-child {
+                    box-shadow: none;
+                }
+                .totalOrderConfirm{
+                    left: 122px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import "/src/stylesheets/variable.scss";
+
+.fnb-corner-button {
+  button {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px 0px;
+    background-color: $color-purple;
+    border: none;
+    outline: none;
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+  }
+}

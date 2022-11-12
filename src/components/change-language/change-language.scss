@@ -1,0 +1,48 @@
+.wrap-flag-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  margin-right: 14.16px;
+}
+.flag {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.pos-language-box {
+  cursor: pointer;
+  position: relative;
+}
+
+.pos-language-wrapper {
+  padding: 16px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.language-item-box {
+  display: flex;
+  align-items: center;
+}
+
+.popover-language-item {
+  position: absolute;
+  width: 177px;
+  height: auto;
+  bottom: 70px;
+  padding: 10px;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+.language-item-flag-item-box {
+  height: 51.84px;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+}
